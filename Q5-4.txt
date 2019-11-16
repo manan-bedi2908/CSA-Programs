@@ -1,0 +1,23 @@
+INP 
+STA A
+INP
+STA B
+LDA A
+CMA
+AND B
+CMA
+STA XNOT
+LDA B
+CMA
+AND A
+CMA
+STA YNOT
+LDA XNOT
+AND YNOT
+CMA
+OUT
+HLT
+A: .data 1 0
+B: .data 1 0
+XNOT: .data 1 0
+YNOT: .data 1 0
