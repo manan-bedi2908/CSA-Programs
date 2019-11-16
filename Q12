@@ -1,0 +1,13 @@
+L1: INP
+STA A
+SZA
+BUN L2
+BUN L3 
+L2: ADD SUM
+STA SUM
+BUN L1
+L3: LDA SUM
+OUT
+HLT
+A: .data 1 0
+SUM: .data 1 0
